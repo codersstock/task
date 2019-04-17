@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users Details</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+
+
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><i class="fa fa-graduation-cap"></i> &nbsp; Online Exam Portal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-3">
+  
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Courses</a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link" href="#">Result</a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Quiz</a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Registeration</a>
+        </li>
+  
+  
+      </ul>
+    </div>
+  </nav>
+  
+  
+ <div class="container mt-5">
+<table class="table table-resonsive table-hover">
+
+<tr>
+    <th>Status</th>
+    <th>User ID</th>
+    <th>UserName</th>
+    <th>Profile Image</th>
+    <th>Email</th>
+   
+
+
+
+
+</tr>
+
+<tr>
+    <td><div class="status-user status-user-1"></div></td>
+    <td>6</td>
+    <td>Hello</td>   
+    <td><img src="images/users/1.jpg" class="img-thumbnail" width="100px" height="100px"> </td> 
+    <td>maaz@gmial.com</td>   
+   
+   
+   </tr>
+
+ 
+
+</table>
+</div>
+
+<!-- =========================================================
+                        Modal For Add Course   
+        ======================================= -->
+
+        <button class="btn btn-secondary" id="addCourse" data-toggle="modal" data-target="#Modal">+ Add</button>
+
+<!-- Modal -->
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add User</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          
+            <div class="modal-body">
+                 
+                    <form action="" method="POST">
+                        <p>
+                         <div class="form-group">
+                          <input class="form-control" placeholder="Enter UserName" data-validation="length alphanumeric" data-validation-length="min10">
+                        </div>
+                          <small class="text-muted">Use Letters Numbers [a-z 0-9]</small>                      
+                        </p>
+<div class="form-row">
+    <div class="col-md-6">
+                        <p>
+                                <div class="form-group">
+                                        <input class="form-control" placeholder="Enter Phone" data-validation="number length" data-validation-length="min11">
+                                      </div>
+                                                
+                        </p>
+                    </div>
+              
+                <div class="col-md-6">
+                        <p>
+                         <div class="form-group">
+                          <input type="text"  data-validation="email" class="form-control" placeholder="Enter Email">
+                        </div>
+                                              
+                        </p>
+
+</div>
+</div>
+
+                        <p>
+                         <div class="form-group">
+                            <input type="file" name="" class="form-control" id="" data-validation="mime size" data-validation-allowing="jpg, png, gif" 
+                            data-validation-max-size="4M">
+                        </div>
+                          <small class="text-muted">Only Choose Image Files</small>                      
+                        </p>
+
+                        <p>
+                            <label for="selectCourse">Select Course</label>
+                                <div class="form-group">
+                                  <select id="selectCourse" class="form-control">
+                                      <option value="47 CRUD">47 CRUD</option>
+                                      <option value="67 suay">67 suay</option>
+                                      <option value="167 vinglish">167 vinglish</option>
+                                      <option value="267 english">267 english</option>
+                                  </select>
+                               </div>
+                                 <small class="text-muted">Only Choose Image Files</small>                      
+                               </p>
+       
+
+
+                              <input type="submit" class="btn btn-primary">
+                        </p>
+                      </form>
+                
+                 
+
+
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+<!-- Scripts written here  -->
+
+
+<script src="js/query.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/validator.js"></script>
+<script>
+  $.validate({
+    lang: 'es'
+  });
+</script>
+
+
+
+</body>
+</html>

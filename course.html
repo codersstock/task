@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Courses</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+
+
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><i class="fa fa-graduation-cap"></i> &nbsp; Online Exam Portal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-3">
+  
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Courses</a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link" href="#">Result</a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Quiz</a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Registeration</a>
+        </li>
+  
+  
+      </ul>
+    </div>
+  </nav>
+  
+  
+ <div class="container mt-5">
+<table class="table table-resonsive table-hover">
+
+<tr>
+    <th>Course ID</th>
+    <th>Course Name</th>
+    <th>Options</th>
+
+
+</tr>
+
+<tr>
+    <td>657</td>
+    <td>
+    <input type="text" class="form-control" value="Object Oriented Programming Lorem ipsum dolor sit amet."></td>
+</td>
+    <td>
+        <a href="" class="btn btn-white btn-outline-secondary"><i class="fa fa-pen"></i>&nbsp;Edit</a></td>
+  </tr>
+
+  <tr>
+        <td>457</td>
+        <td>
+            <input type="text" class="form-control" value="Object Oriented Programming Lorem ipsum dolor sit amet."></td>
+        <td><a href="" class="btn btn-white btn-outline-secondary"><i class="fa fa-pen"></i>&nbsp;Edit</a></td>
+      </tr>
+
+</table>
+</div>
+
+<!-- =========================================================
+                        Modal For Add Course   
+        ======================================= -->
+
+        <button class="btn btn-secondary" id="addCourse" data-toggle="modal" data-target="#Modal">+ Add</button>
+
+<!-- Modal -->
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add Course</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          
+            <div class="modal-body">
+                 
+                    <form action="" method="POST">
+                        <p>
+                         <div class="form-group">
+                          <input class="form-control" data-validation="length alphanumeric" data-validation-length="min4">
+                        </div>
+                          <small class="text-muted">Use Letters Numbers [a-z 0-9]</small>                      
+                        </p>
+                       
+                          <input type="submit" class="btn btn-primary">
+                        </p>
+                      </form>
+                
+                 
+
+
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+
+
+
+<!-- Scripts written here  -->
+
+
+<script src="js/query.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/validator.js"></script>
+<script>
+  $.validate({
+    lang: 'es'
+  });
+</script>
+
+
+
+</body>
+</html>
